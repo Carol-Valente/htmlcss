@@ -1,0 +1,33 @@
+<html>
+    <script>
+        function verificaDivisivel3ou5(numero) {            
+            if (numero %3 === 0 || numero %5 ===0) {
+               return true;
+            } else {
+                return false;
+            }
+        }
+        function somaMultiplos3ou5Menores1000() {
+            var soma = 0;
+
+            /*for (var i = 3; i <= 999; i++) {
+                if (verificaDivisivel3ou5(i)) {
+                    //soma = soma + i;
+                    soma += i;                    
+                }
+            }
+            return soma;*/
+            
+            var i = 3;
+            while (i <= 999) {
+                if (verificaDivisivel3ou5(i)) {
+                    soma += 1;                    
+                }
+                i++;
+            }            
+            return soma;
+
+
+        }
+    </script>
+</html>
